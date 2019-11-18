@@ -1,0 +1,34 @@
+import Hello from './Hello';
+import {
+  Story,
+  Props,
+  Description,
+  Preview
+} from '@storybook/addon-docs/blocks';
+
+# Hello
+
+<Hello name="MDX" big={true} />
+<Description of={Hello} />
+
+## Props
+
+이 컴포넌트에서 사용되는 Props 들을 볼까요?
+
+<Props of={Hello} />
+
+## 그냥 조그마한 Hello
+
+<Preview>
+  <Story id="components-basic-hello--standard" />
+</Preview>
+
+그냥 조그마한 Hello 입니다.
+
+## 커다란 Hello
+
+커다란 Hello를 보여주고 싶으면 `big` props 를 `true` 로설정하시면 됩니다.
+
+<Preview>
+  <Story id="components-basic-hello--big" />
+</Preview>
