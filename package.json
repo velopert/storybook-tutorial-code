@@ -4,6 +4,9 @@
   "module": "dist/index.js",
   "license": "MIT",
   "types": "dist/types/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.7.2",
