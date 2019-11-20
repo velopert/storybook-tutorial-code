@@ -1,8 +1,9 @@
 {
-  "name": "storybook-tutorial",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "react-uikit-sample",
+  "version": "1.0.3",
+  "module": "dist/index.js",
   "license": "MIT",
+  "types": "dist/types/index.d.ts",
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.7.2",
@@ -12,17 +13,29 @@
     "@storybook/addon-links": "^5.2.6",
     "@storybook/addons": "^5.2.6",
     "@storybook/react": "^5.2.6",
+    "@svgr/rollup": "^4.3.3",
     "babel-loader": "^8.0.6",
     "babel-plugin-named-asset-import": "^0.3.4",
     "babel-preset-react-app": "^9.0.2",
     "react-docgen-typescript-loader": "^3.4.0",
+    "rollup": "^1.27.2",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-url": "^3.0.0",
     "typescript": "^3.7.2"
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build": "rollup -c",
+    "build:types": "tsc --emitDeclarationOnly"
   },
   "peerDependencies": {
+    "@emotion/core": "^10.0.22",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "react-spring": "^8.0.27"
   }
 }
