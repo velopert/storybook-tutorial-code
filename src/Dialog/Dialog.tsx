@@ -101,6 +101,10 @@ Dialog.defaultProps = {
   confirmText: '확인'
 };
 
+const breakpoints = [576, 768, 992, 1200];
+
+const mq = breakpoints.map(bp => `@media (max-width: ${bp}px)`);
+
 const fullscreen = css`
   position: fixed;
   top: 0;
@@ -140,6 +144,17 @@ const whiteBox = css`
     font-size: 1.125rem;
     margin: 0;
     color: #868e96;
+  }
+
+  ${mq[1]} {
+    width: calc(100% - 2rem);
+    padding: 1.5rem;
+    h3 {
+      font-size: 1.3125rem;
+    }
+    p {
+      font-size: 0.875rem;
+    }
   }
 `;
 
