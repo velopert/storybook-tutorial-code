@@ -24,3 +24,9 @@ Used tools:
 - [4-4. Dialog 만들기](https://github.com/velopert/storybook-tutorial-code/tree/04d)
 - [5-1. Rollup으로 라이브러리 번들하기](https://github.com/velopert/storybook-tutorial-code/tree/05a)
 - [5-2. npm에 publish 하기](https://github.com/velopert/storybook-tutorial-code/tree/05b)
+
+프로젝트를 clone 했을 경우 다음 명령어를 사용하여 특정 태그의 코드를 볼 수 있습니다.
+
+```
+git checkout 02a
+```
