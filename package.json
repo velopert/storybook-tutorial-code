@@ -21,5 +21,8 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
+  },
+  "peerDependencies": {
+    "react-spring": "^8.0.27"
   }
 }
